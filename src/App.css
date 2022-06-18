@@ -27,12 +27,11 @@ select {
 
 .box {
   color: lightgrey;
-  margin-top: 200px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   border-style: solid;
-  bottom: 500px;
   width: 50%;
   border-width: 5px;
 }
@@ -43,6 +42,12 @@ select {
 
 .box > p {
   font-size: 140%;
+}
+
+.all-comments {
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 110%;
 }
 
 

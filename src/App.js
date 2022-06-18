@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import HeroContainer from './containers/HeroContainer';
+import CommentBox from "./containers/CommentBox";
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
 
   <body className='main-container'>
     <HeroContainer/>
+    <CommentBox/>
   </body>
  ); 
   
