@@ -1,0 +1,48 @@
+.main-container {
+  background-image: url("./images/DotaBackground.jpeg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+} 
+
+body {
+  color: lightgrey;
+}
+
+h1 {
+text-align: center;
+font-size: 350%;}
+
+select {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1000px;
+  height:40px;
+  border-radius:36px;;
+}
+
+.box {
+  color: lightgrey;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-style: solid;
+  bottom: 500px;
+  width: 50%;
+  border-width: 5px;
+}
+
+.box > h2 {
+  font-size: 190%;
+}
+
+.box > p {
+  font-size: 140%;
+}
+
+
