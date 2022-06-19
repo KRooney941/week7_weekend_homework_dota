@@ -17,10 +17,9 @@ const HeroContainer = () => {
         const updatedHeroes = heroes.map((hero) => {
             return hero.localized_name === localized_name
             ? {...hero, isFavourite: !hero.isFavourite}
-            :hero 
+            : hero 
         }) 
         setHeroes(updatedHeroes)
-
     }
 
     const getHeroes = function(){
