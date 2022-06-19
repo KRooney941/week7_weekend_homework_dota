@@ -10,10 +10,10 @@ function App() {
   
   return (
 
-  <body className='main-container'>
+  <div className='main-container'>
     <HeroContainer/>
     <CommentBox/>
-  </body>
+  </div>
  ); 
   
 }

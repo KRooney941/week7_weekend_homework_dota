@@ -1,23 +1,24 @@
-import React, {useEffect, useState} from "react";
-import HeroContainer from "../containers/HeroContainer";
+const HeroDetail = ({hero, onFavouriteToggle}) => {
 
-const HeroDetail = ({selectedHero}) => {
+    if (!hero) {
+        return null
+    }
 
-    // const [roles, setRoles] = useState(0)
+    const handleClick = () => {
+        onFavouriteToggle(hero.localized_name)
+    }
 
-    // useEffect(() => {
-    //     setRoles(hero.roles.join(', '))
-    // })
-   
+    const favouriteBtnText = hero.isFavourite ? 'Remove from favourites' : 'Add to favourites'
 
     return (
-        <div className="box">
-            <h2>Name: {selectedHero.localized_name}</h2>
-            <p>Primary Attribute: {selectedHero.primary_attr}</p>
-            <p>Attack Type: {selectedHero.attack_type}</p>
-            <p>No of Legs: {selectedHero.legs}</p>
-            <p>Roles: {selectedHero.roles}</p>
-        </div>
+    <div className="box">
+        <h2>Name: {hero.localized_name}</h2>
+        <p>Primary Attribute: {hero.primary_attr}</p>
+        <p>Attack Type: {hero.attack_type}</p>
+        <p>No of Legs: {hero.legs}</p>
+        <p>Roles: {hero.roles}</p>
+        <button className="fav-button" onClick={handleClick}>{favouriteBtnText}</button>
+    </div>
     )
 }
 
