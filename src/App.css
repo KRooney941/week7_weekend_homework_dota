@@ -1,6 +1,7 @@
+
 .main-container {
   background-image: url("./images/DotaBackground.jpeg");
-  position: fixed;
+  position:absolute;
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -45,9 +46,9 @@ select {
 }
 
 .all-comments {
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 40px;
   font-size: 110%;
+  margin-bottom: 10px;
 }
 
 
